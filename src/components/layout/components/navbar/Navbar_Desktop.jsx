@@ -6,14 +6,12 @@ function Navbar_Desktop({ navLinks }) {
 
   return (
     <>
-      <div className="hidden md:flex items-center justify-between gap-12">
+      <div className="hidden md:flex items-center justify-between gap-2">
         {navLinks.map((links, index) => (
           <Link href={links.url} key={index}>
             <a
-              className={`py-4  ${
-                router.pathname == links.url
-                  ? "before:absolute before:bottom-[-9px] before:left-0 before:bg-black before:w-full before:h-[2px]"
-                  : ""
+              className={`py-3 px-6 text-[0.9rem] font-medium hover:bg-[#ffd865]  ${
+                router.pathname == links.url ? "bg-[#ffd865]" : "bg-transparent"
               }`}
             >
               {links.link}

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import Navbar_Desktop from "./components/navbar/Navbar_Desktop";
@@ -40,21 +41,25 @@ function Navbar() {
   };
   return (
     <>
-      <div className="absolute w-full top-2 z-[10] border-b-[1px] border-[#0000001a]">
+      <div className="absolute  w-full top-0 z-[10]">
         <div className="container flex items-center justify-between gap-4 ">
-          <Link href="/">
-            <div className="w-auto cursor-pointer py-4">
-              <h2>Logo</h2>
+          <Link href="/" passHref>
+            <div className="w-20 h-full py-6 px-3 bg-white cursor-pointer ">
+              <Image
+                layout="responsive"
+                loading="eager"
+                width={200}
+                height={100}
+                objectFit="cover"
+                objectPosition="center"
+                src="/logo.png"
+                alt="Normalized Nerd logo - home"
+              />
             </div>
           </Link>
-
+          <Navbar_Desktop navLinks={navLinks} />
           <div className="flex items-center justify-between gap-8">
-            <Navbar_Desktop navLinks={navLinks} />
-
-            <div
-              onClick={openModel}
-              className="md:hidden flex text-3xl cursor-pointer"
-            >
+            <div onClick={openModel} className=" flex text-3xl cursor-pointer">
               <FiMenu />
             </div>
           </div>
