@@ -1,13 +1,16 @@
 import Link from "next/link";
+import { RiFileList3Fill } from "react-icons/ri";
 import Container from "../layout/Container";
 import BlogList from "./components/BlogList";
 
 function Blog() {
   return (
     <>
-      <div className="w-full h-full py-16">
+      <div className="w-full h-full py-16 bg-[#f2c744]">
         <Container>
-          <p>Blogs</p>
+          <p className="flex items-center text-black mb-2 text-[2rem]">
+            <RiFileList3Fill />
+          </p>
           <h2 className="mb-2">
             Latest <span className="font-bold">Articles</span>.
           </h2>

@@ -5,7 +5,7 @@ function CardblogBox() {
   return (
     <>
       <div className="flex-1 flex items-end  duration-300 h-[320px] group hover:scale-105 hover:shadow-xl">
-        <div className="absolute inset-0 -z-20 w-full h-full flex items-center justify-center">
+        <div className="absolute inset-0  w-full h-full flex items-center justify-center">
           <Image
             layout="fill"
             src="/assets/images/course.jpg"

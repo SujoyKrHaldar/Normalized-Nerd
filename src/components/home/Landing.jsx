@@ -5,7 +5,7 @@ import LandingContent from "./components/LandingContent";
 function Landing() {
   return (
     <>
-      <div className="w-full h-screen bg-[#f2c744] border-4 border-white">
+      <div className="w-full h-screen bg-[#f2c744] border-4 border-white border-b-0">
         <Container className="flex items-center justify-start">
           <div className="flex-1">
             <LandingContent />
