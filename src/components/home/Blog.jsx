@@ -3,7 +3,7 @@ import { RiFileList3Fill } from "react-icons/ri";
 import Container from "../layout/Container";
 import BlogList from "./components/BlogList";
 
-function Blog() {
+function Blog({ data }) {
   return (
     <>
       <div className="w-full h-full py-16 bg-[#f2c744]">
@@ -18,10 +18,12 @@ function Blog() {
             Read my latest blogs and let me know is it helpfull or not!
           </p>
 
-          <BlogList />
+          <BlogList data={data} />
 
           <Link href="/blogs">
-            <a className="btn mt-8 bg-[#eeeeee] text-black">Read more</a>
+            <a className="btn inline-block mt-8 bg-[#eeeeee] text-black">
+              Read more
+            </a>
           </Link>
         </Container>
       </div>

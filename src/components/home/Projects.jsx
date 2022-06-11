@@ -28,7 +28,9 @@ function Projects() {
           </p>
 
           <Link href="/projects">
-            <a className="btn mt-8 bg-[#eeeeee] text-black">View all</a>
+            <a className="btn inline-block mt-8 bg-[#eeeeee] text-black">
+              View all
+            </a>
           </Link>
         </Container>
       </div>

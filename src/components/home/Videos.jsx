@@ -23,10 +23,17 @@ function Videos({ data }) {
 
           <div className="mt-8 flex gap-2">
             <Link href="/videos">
-              <a className="btn  bg-[#597bb1] text-white">View all</a>
+              <a className="btn inline-block bg-[#597bb1] text-white">
+                View all
+              </a>
             </Link>
-            <Link href="/blogs">
-              <a className="btn  bg-[#eeeeee] text-black">View youtube</a>
+            <Link href="https://www.youtube.com/c/NormalizedNerd/playlists">
+              <a
+                target="_blank"
+                className="btn inline-block bg-[#eeeeee] text-black"
+              >
+                View youtube
+              </a>
             </Link>
           </div>
         </Container>

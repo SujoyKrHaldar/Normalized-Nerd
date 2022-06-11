@@ -12,7 +12,7 @@ function BackgroundImage({ src, alt, className, position, objFit }) {
         objectFit={objFit || "cover"}
         objectPosition={position || "center"}
         layout="fill"
-        loading="eager"
+        loading="lazy"
         // className={className}
         className={`${className} duration-1000
               ${

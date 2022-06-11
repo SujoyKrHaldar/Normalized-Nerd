@@ -21,7 +21,10 @@ function ShowcaseContent() {
         </p>
 
         <Link href="https://www.youtube.com/c/NormalizedNerd">
-          <a target="_blank" className="btn mt-8 bg-[#ef4444] text-white">
+          <a
+            target="_blank"
+            className="btn inline-block mt-8 bg-[#ef4444] text-white"
+          >
             Check my channel
           </a>
         </Link>
