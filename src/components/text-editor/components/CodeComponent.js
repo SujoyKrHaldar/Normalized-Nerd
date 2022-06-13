@@ -1,5 +1,4 @@
 import highlight from "highlight.js";
-// import "highlight.js/styles/github-dark.css";
 import "highlight.js/styles/nnfx-light.css";
 
 import { findDOMNode } from "react-dom";
@@ -15,6 +14,7 @@ function CodeComponent({ value }) {
   return (
     <div className="my-8">
       <pre
+        allowunsafehtml="true"
         className="p-6 overflow-x-auto border-l-4 border-black border-[1px]"
         data-language={value.language}
         ref={code}
