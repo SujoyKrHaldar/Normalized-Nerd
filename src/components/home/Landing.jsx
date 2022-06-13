@@ -17,7 +17,6 @@ function Landing() {
                 alt="profilepic"
                 layout="fill"
                 objectFit="cover"
-                className=""
               />
             </div>
           </div>

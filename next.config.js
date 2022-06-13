@@ -12,7 +12,7 @@ const nextConfig = {
     return [
       {
         source: "/dashboard",
-        destination: "https://www.google.com",
+        destination: "https://dashboard-normalizednerd.vercel.app/desk",
         permanent: true,
       },
     ];
