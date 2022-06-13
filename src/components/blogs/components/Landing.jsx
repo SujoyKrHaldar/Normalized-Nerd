@@ -12,17 +12,13 @@ function Landing({ data }) {
             <Moment format="MMMM Do YYYY">{data.publishedAt}</Moment>
           </p>
           <h1 className="font-bold mb-4">{data.title}</h1>
-          <p className="mb-4 max-w-lg">
-            n the past, businesses wanted to have full control over all aspects
-            of the software, and this is because they were used to adopting
-            custom.
-          </p>
+          <p className="mb-4 max-w-lg">{data?.description}</p>
           <p className="text-[#0000009c]">#COMPOSABLE ARCHITECTURE</p>
         </div>
 
-        <div className="bg-[#faebd7]">
+        <div className="bg-[#faebd7] border-[1px] border-black">
           <Img
-            src={urlFor(data.mainImage).url()}
+            src={urlFor(data?.mainImage).url()}
             alt={data.title}
             layout="responsive"
             width={1920}

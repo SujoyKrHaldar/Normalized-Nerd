@@ -52,8 +52,8 @@ function slug({ blog, otherBlogs }) {
   return (
     <>
       <Head>
-        <title>Blog name - Normalized Nerd</title>
-        <meta name="description" content="Welcome to Normalized nerd." />
+        <title>{blog.title} - Normalized Nerd</title>
+        <meta name="description" content={blog?.description} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

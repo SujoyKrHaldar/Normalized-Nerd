@@ -33,6 +33,7 @@ export const getOtherBlogs = `*[_type == "blog" && slug.current != $slug]|order(
 export const getBlogBySlug = `*[_type == "blog" && slug.current == $slug][0]{
                                 "id":_id,
                                 title,
+                                description,
                                 "slug":slug.current,
                                 publishedAt,
                                 mainImage,
