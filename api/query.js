@@ -18,6 +18,13 @@ export const getAllBlogs = `*[_type == "blog"]|order(_createdAt desc){
                                 mainImage,
                             }`;
 
+export const getAllFaqs = `*[_type == "faq"]|order(_createdAt desc){
+                                "id":_id,
+                                "createdAt":_createdAt,
+                                question,
+                                "answer":body,
+                            }`;
+
 //For indivudial blog
 
 export const getAllBlogSlugs = `*[_type == "blog" && defined(slug.current)][].slug.current`;

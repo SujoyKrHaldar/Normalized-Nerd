@@ -20,10 +20,11 @@ function ImageComponent({ value }) {
           <img src={value.url} alt={value.caption} width={1920} height={1080} />
         )}
       </div>
-
-      <p className="text-base bg-[#faebd7] px-4 py-1.5 border-l-4 border-black inline-block">
-        {value.caption}
-      </p>
+      {value?.caption && (
+        <p className="text-base bg-[#faebd7] px-4 py-1.5 border-l-4 border-black inline-block">
+          {value.caption}
+        </p>
+      )}
     </div>
   );
 }

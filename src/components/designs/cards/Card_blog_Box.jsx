@@ -15,7 +15,7 @@ function CardblogBox({ data }) {
             objectFit="cover"
           />
         </div>
-        <div className="max-w-[270px] bg-white p-4 mb-4 -translate-x-2 shadow-lg group-hover:shadow-2xl group-hover:-translate-x-1 ">
+        <div className="max-w-[270px] bg-white p-4 -mb-4 group-hover:mb-4 -translate-x-2 shadow-lg group-hover:shadow-2xl group-hover:-translate-x-1 ">
           <p className="text-base">
             <Moment format="MMMM Do YYYY">{data.publishedAt}</Moment>
           </p>
