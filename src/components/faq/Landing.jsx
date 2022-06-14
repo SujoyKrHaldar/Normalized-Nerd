@@ -13,7 +13,7 @@ function Landing() {
             ></path>
           </svg>
         </div>
-        <Container className="w-full h-full flex items-end">
+        <Container className="flex items-end">
           <div className="max-w-lg">
             <p className="mb-2">Faq</p>
             <h1>
