@@ -8,12 +8,14 @@ function CardblogBox({ data }) {
     <>
       <div className="border-[1px] border-black flex items-end  duration-300 h-[320px] group hover:scale-105 hover:shadow-xl">
         <div className="absolute inset-0  w-full h-full flex items-center justify-center">
-          <Img
-            src={urlFor(data.mainImage).url()}
-            alt={data.title}
-            layout="fill"
-            objectFit="cover"
-          />
+          {data?.mainImage && (
+            <Img
+              src={urlFor(data?.mainImage).url()}
+              alt={data.title}
+              layout="fill"
+              objectFit="cover"
+            />
+          )}
         </div>
         <div className="border-[1px] border-black max-w-[270px] bg-white p-4 -mb-4 group-hover:mb-4 -translate-x-2 shadow-lg group-hover:shadow-2xl group-hover:-translate-x-1 ">
           <p className="text-base">

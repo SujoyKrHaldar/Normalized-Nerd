@@ -12,7 +12,7 @@ const BlockComponent = {
       {children == "" ? (
         <br />
       ) : (
-        <p className="leading-8 text-[#4b4b4b]">{children}</p>
+        <p className="leading-8 text-black">{children}</p>
       )}
     </>
   ),

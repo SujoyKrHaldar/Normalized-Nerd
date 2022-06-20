@@ -14,5 +14,7 @@ const MarkComponent = {
       </a>
     );
   },
+
+  code: ({ children }) => <code className="bg-[#f8f8f8] p-1">{children}</code>,
 };
 export default MarkComponent;

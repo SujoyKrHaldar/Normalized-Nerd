@@ -17,15 +17,17 @@ function Landing({ data }) {
         </div>
 
         <div className="bg-[#faebd7] border-[1px] border-black">
-          <Img
-            src={urlFor(data?.mainImage).url()}
-            alt={data.title}
-            layout="responsive"
-            width={1920}
-            height={1080}
-            objectFit="cover"
-            className="w-full"
-          />
+          {data?.mainImage && (
+            <Img
+              src={urlFor(data?.mainImage).url()}
+              alt={data.title}
+              layout="responsive"
+              width={1920}
+              height={1080}
+              objectFit="cover"
+              className="w-full"
+            />
+          )}
         </div>
       </Container>
     </>
