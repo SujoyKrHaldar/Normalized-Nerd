@@ -22,6 +22,10 @@ function Navbar_Mobile({ navLinks, open, setOpen }) {
             <IoMdClose />
           </div>
           <div className="flex flex-col">
+            <Link href="/">
+              <a className="p-4 text-xl font-semibold">Home</a>
+            </Link>
+
             {navLinks.map((links, index) => (
               <Link href={links.url} key={index}>
                 <a className="p-4 text-xl font-semibold">{links.link}</a>

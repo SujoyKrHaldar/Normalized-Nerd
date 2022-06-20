@@ -6,10 +6,10 @@ import Navbar_Desktop from "./components/navbar/Navbar_Desktop";
 import Navbar_Mobile from "./components/navbar/Navbar_Mobile";
 
 const navLinks = [
-  {
-    link: "Home",
-    url: "/",
-  },
+  // {
+  //   link: "Home",
+  //   url: "/",
+  // },
   {
     link: "Video",
     url: "/videos",
