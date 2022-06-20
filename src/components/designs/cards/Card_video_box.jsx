@@ -8,7 +8,7 @@ function Card_video_box({ data }) {
   return (
     <>
       <Link href={`/videos/${data.slug}`}>
-        <a className="group hover:scale-105 hover:shadow-lg">
+        <a className="group hover:scale-105 bg-white hover:shadow-lg">
           <div className="w-full h-[180px] bg-[#c8c8c8]">
             <Img
               src={urlFor(data.mainImage).url()}

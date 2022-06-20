@@ -4,8 +4,7 @@ export const getAllVideos = `*[_type == "video"]|order(_createdAt desc){
                                 "id":_id,
                                 title,
                                 "slug": slug.current,
-                                "video_url":videoLink.url,
-                                category,
+                                tags,
                                 mainImage,
                                 publishedAt
                             }`;
@@ -29,14 +28,6 @@ export const getAllFaqs = `*[_type == "faq"]|order(_createdAt desc){
 
 export const getAllBlogSlugs = `*[_type == "blog" && defined(slug.current)][].slug.current`;
 
-export const getOtherBlogs = `*[_type == "blog" && slug.current != $slug]|order( publishedAt desc){
-                                "id":_id,
-                                title,
-                                "slug":slug.current,
-                                publishedAt,
-                                mainImage,
-                            }`;
-
 export const getBlogBySlug = `*[_type == "blog" && slug.current == $slug][0]{
                                 "id":_id,
                                 title,
@@ -45,4 +36,36 @@ export const getBlogBySlug = `*[_type == "blog" && slug.current == $slug][0]{
                                 publishedAt,
                                 mainImage,
                                 body
+                            }`;
+
+export const getOtherBlogs = `*[_type == "blog" && slug.current != $slug]|order( publishedAt desc){
+                                "id":_id,
+                                title,
+                                "slug":slug.current,
+                                publishedAt,
+                                mainImage,
+                            }`;
+
+//For indivudial video
+
+export const getAllVideoSlugs = `*[_type == "video" && defined(slug.current)][].slug.current`;
+
+export const getvideoBySlug = `*[_type == "video" && slug.current == $slug][0]{
+                                 "id":_id,
+                                title,
+                                "slug": slug.current,
+                                "video_url":videoLink.url,
+                                description,
+                                body,
+                                tags,
+                                publishedAt
+                            }`;
+
+export const getOtherVideos = `*[_type == "video" && slug.current != $slug]|order( publishedAt desc){
+                                "id":_id,
+                                title,
+                                "slug": slug.current,
+                                tags,
+                                mainImage,
+                                publishedAt
                             }`;
