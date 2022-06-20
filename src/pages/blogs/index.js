@@ -1,8 +1,7 @@
 import Head from "next/head";
 import { getAllBlogs } from "../../../api/query";
 import { sanityClient } from "../../../api/sanity";
-import BlogList from "../../components/blog-index/BlogList";
-import Landing from "../../components/blog-index/Landing";
+import BlogList from "../../components/static-pages/blog/BlogList";
 import Layout from "../../components/layout/Layout";
 
 export const getStaticProps = async () => {
@@ -24,7 +23,6 @@ function index({ blogs }) {
       </Head>
 
       <Layout>
-        <Landing />
         <BlogList data={blogs} />
       </Layout>
     </>

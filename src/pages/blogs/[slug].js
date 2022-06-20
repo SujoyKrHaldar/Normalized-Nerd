@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Body from "../../components/blogs/Body";
 import Layout from "../../components/layout/Layout";
+import Body from "../../components/dynamic-pages/blogs/Body";
 
 import { sanityClient } from "../../../api/sanity";
 import {

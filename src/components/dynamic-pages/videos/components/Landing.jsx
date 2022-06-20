@@ -1,9 +1,8 @@
 import Moment from "react-moment";
-import Container from "../../layout/Container";
-import VideoPlayer from "../../tools/Video-player/VideoPlayer";
+import Container from "../../../layout/Container";
+import VideoPlayer from "../../../tools/Video-player/VideoPlayer";
 
 function Landing({ data }) {
-  console.log(data.tags);
   return (
     <>
       <Container>

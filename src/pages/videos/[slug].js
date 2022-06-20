@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Body from "../../components/videos/Body";
+import Body from "../../components/dynamic-pages/videos/Body";
 import Layout from "../../components/layout/Layout";
 
 import {

@@ -1,5 +1,5 @@
-import Accordion from "../designs/cards/Accordion";
-import Container from "../layout/Container";
+import Accordion from "../../designs/cards/Accordion";
+import Container from "../../layout/Container";
 
 function Faqs({ data }) {
   return (

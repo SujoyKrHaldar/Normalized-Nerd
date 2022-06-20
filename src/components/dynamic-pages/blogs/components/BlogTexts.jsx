@@ -1,5 +1,5 @@
-import Container from "../../layout/Container";
-import RichTextEditor from "../../text-editor/RichTextEditor";
+import Container from "../../../layout/Container";
+import RichTextEditor from "../../../tools/text-editor/RichTextEditor";
 
 function BlogTexts({ data }) {
   return (

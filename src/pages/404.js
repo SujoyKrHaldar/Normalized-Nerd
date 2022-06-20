@@ -1,5 +1,5 @@
 import Head from "next/head";
-import PageNotFound from "../components/others/404";
+import PageNotFound from "../components/static-pages/others/404";
 
 function pageNotFound() {
   return (

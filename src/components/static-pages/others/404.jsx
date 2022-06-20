@@ -1,5 +1,5 @@
-import Img from "../designs/others/Img";
-import Container from "../layout/Container";
+import Img from "../../designs/others/Img";
+import Container from "../../layout/Container";
 import Link from "next/link";
 
 function PageNotFound() {

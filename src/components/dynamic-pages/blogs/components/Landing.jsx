@@ -1,7 +1,7 @@
-import Img from "../../designs/others/Img";
+import Img from "../../../designs/others/Img";
 import Moment from "react-moment";
-import { urlFor } from "../../../../api/sanity";
-import Container from "../../layout/Container";
+import { urlFor } from "../../../../../api/sanity";
+import Container from "../../../layout/Container";
 
 function Landing({ data }) {
   return (

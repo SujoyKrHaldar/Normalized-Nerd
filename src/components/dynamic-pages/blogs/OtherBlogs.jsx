@@ -1,5 +1,5 @@
-import CardblogBox from "../designs/cards/Card_blog_Box";
-import Container from "../layout/Container";
+import CardblogBox from "../../designs/cards/Card_blog_Box";
+import Container from "../../layout/Container";
 
 function OtherBlogs({ data }) {
   return (

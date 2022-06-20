@@ -5,7 +5,7 @@ const MarkComponent = {
       : undefined;
     return (
       <a
-        className="border-b-[1px] border-transparent text-black hover:border-black font-bold pb-2"
+        className="border-b-[1px] border-transparent text-blue-700 hover:border-blue-700 font-bold pb-2"
         href={value?.href}
         target={target}
         rel={target === "_blank" && "noindex nofollow"}

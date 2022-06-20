@@ -2,7 +2,7 @@ import Moment from "react-moment";
 import { useState } from "react";
 import { BiPlus } from "react-icons/bi";
 import { BsQuestionSquareFill } from "react-icons/bs";
-import RichTextEditor from "../../text-editor/RichTextEditor";
+import RichTextEditor from "../../tools/text-editor/RichTextEditor";
 
 function Accordion({ faq }) {
   const [isActive, setIsActive] = useState(false);
@@ -10,16 +10,18 @@ function Accordion({ faq }) {
   return (
     <>
       <div
-        onClick={() => setIsActive(!isActive)}
-        className={`max-w-4xl duration-200 px-8 cursor-pointer border-[1px]
+        className={`max-w-4xl duration-200 px-8  border-[1px]
               hover:bg-slate-100 mb-4 last:mb-0 ${
                 isActive
                   ? "border-black border-l-4 p-8 bg-slate-100 "
                   : "border-transparent p-4 bg-white border-slate-300 "
               }`}
       >
-        <div className="flex items-center justify-between gap-4">
-          <div className="flex items-center justify-start gap-3">
+        <div
+          className="flex items-center justify-between gap-4 cursor-pointer"
+          onClick={() => setIsActive(!isActive)}
+        >
+          <div className="flex items-start justify-start gap-3">
             <div className="text-2xl flex text-[#6289af] items-center">
               <BsQuestionSquareFill />
             </div>

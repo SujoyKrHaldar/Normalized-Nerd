@@ -1,4 +1,4 @@
-import VideoPlayer from "../../tools/Video-player/VideoPlayer";
+import VideoPlayer from "../../../tools/Video-player/VideoPlayer";
 
 function YoutubeComponent({ value }) {
   return (

@@ -1,5 +1,5 @@
-import Container from "../layout/Container";
-import Card_video_box from "../designs/cards/Card_video_box";
+import Container from "../../layout/Container";
+import Card_video_box from "../../designs/cards/Card_video_box";
 
 function OtherVideos({ data }) {
   return (

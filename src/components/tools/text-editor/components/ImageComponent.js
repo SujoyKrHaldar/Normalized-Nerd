@@ -1,5 +1,5 @@
-import { urlFor } from "../../../../api/sanity";
-import Img from "../../designs/others/Img";
+import { urlFor } from "../../../../../api/sanity";
+import Img from "../../../designs/others/Img";
 
 function ImageComponent({ value }) {
   return (

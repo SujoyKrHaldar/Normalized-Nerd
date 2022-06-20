@@ -1,13 +1,18 @@
 const BlockComponent = {
-  h1: ({ children }) => <h1 className="text-2xl">{children}</h1>,
-  h2: ({ children }) => <h2 className="mb-2 font-medium">{children}</h2>,
+  h1: ({ children }) => (
+    <>{children == "" ? <br /> : <h1 className="text-2xl">{children}</h1>}</>
+  ),
+
+  h2: ({ children }) => (
+    <>{children == "" ? <br /> : <h2 className="font-medium">{children}</h2>}</>
+  ),
 
   normal: ({ children }) => (
     <>
       {children == "" ? (
         <br />
       ) : (
-        <p className="mb-8 leading-8 text-[#4b4b4b] last:mb-0">{children}</p>
+        <p className="leading-8 text-[#4b4b4b]">{children}</p>
       )}
     </>
   ),

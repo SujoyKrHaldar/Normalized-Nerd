@@ -1,5 +1,5 @@
 import { DiscussionEmbed } from "disqus-react";
-import Container from "../layout/Container";
+import Container from "../../layout/Container";
 
 function BlogComment({ data }) {
   // const disqusShortname = "normalizednerd";
