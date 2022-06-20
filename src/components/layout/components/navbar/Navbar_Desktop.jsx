@@ -33,7 +33,7 @@ function Navbar_Desktop({ navLinks }) {
           <NavLink
             href={links.url}
             key={index}
-            className="py-3 px-6 text-[0.9rem] font-medium hover:bg-[#ffd865]"
+            className="py-3 px-6 font-medium hover:bg-[#ffd865]"
           >
             {links.link}
           </NavLink>

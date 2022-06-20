@@ -1,22 +1,20 @@
-import Card_video_box from "../../designs/cards/Card_video_box";
+import VideoCard from "../../designs/cards/VideoCard";
 import Container from "../../layout/Container";
 
 function VideoList({ data }) {
   return (
     <>
-      <div className="w-full h-[250px] bg-[#f2c744] py-8">
-        <Container className="flex items-end">
-          <div className="max-w-lg">
-            <h1 className="font-bold">Video</h1>
+      <div className="w-full h-auto">
+        <div className="absolute inset-0 w-full h-[50vh] bg-[#f2c744]"></div>
+        <Container className="pt-[12rem] pb-10">
+          <h2 className="mb-2">
+            All <span className="font-bold">Videos</span>
+          </h2>
+          <div className="mt-4 grid grid-cols-4 gap-4 ">
+            {data.map((d) => (
+              <VideoCard key={d.id} data={d} />
+            ))}
           </div>
-        </Container>
-      </div>
-
-      <div className="py-16">
-        <Container className="flex items-center justify-start gap-x-4 flex-wrap gap-y-8">
-          {data.map((d) => (
-            <Card_video_box key={d.id} data={d} />
-          ))}
         </Container>
       </div>
     </>

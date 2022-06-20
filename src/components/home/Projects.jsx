@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { GrProjects } from "react-icons/gr";
 import Container from "../layout/Container";
+import ProjectList from "./components/ProjectList";
 
-function Projects() {
+function Projects({ data }) {
   return (
     <>
       <div className="w-full h-full py-16">
@@ -26,6 +27,8 @@ function Projects() {
             I love to create projects on machine learning related topics. Check
             it
           </p>
+
+          <ProjectList data={data} />
 
           <Link href="/projects">
             <a className="btn inline-block mt-8 bg-[#eeeeee] text-black">

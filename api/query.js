@@ -3,6 +3,7 @@
 export const getAllVideos = `*[_type == "video"]|order(_createdAt desc){
                                 "id":_id,
                                 title,
+                                description,
                                 "slug": slug.current,
                                 tags,
                                 mainImage,
@@ -15,6 +16,13 @@ export const getAllBlogs = `*[_type == "blog"]|order(_createdAt desc){
                                 "slug":slug.current,
                                 publishedAt,
                                 mainImage,
+                            }`;
+
+export const getAllProjects = `*[_type == "project"]|order(_createdAt desc){
+                                "id":_id,
+                                name,
+                                body,
+                                links
                             }`;
 
 export const getAllFaqs = `*[_type == "faq"]|order(_createdAt desc){
@@ -64,6 +72,7 @@ export const getvideoBySlug = `*[_type == "video" && slug.current == $slug][0]{
 export const getOtherVideos = `*[_type == "video" && slug.current != $slug]|order( publishedAt desc){
                                 "id":_id,
                                 title,
+                                description,
                                 "slug": slug.current,
                                 tags,
                                 mainImage,

@@ -3,7 +3,7 @@ import Moment from "react-moment";
 import { urlFor } from "../../../../api/sanity";
 import Img from "../others/Img";
 
-function CardblogBox({ data }) {
+function BlogCard({ data }) {
   return (
     <>
       <div className="border-[1px] border-black flex items-end  duration-300 h-[320px] group hover:scale-105 hover:shadow-xl">
@@ -31,4 +31,4 @@ function CardblogBox({ data }) {
   );
 }
 
-export default CardblogBox;
+export default BlogCard;

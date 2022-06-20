@@ -1,5 +1,5 @@
 import Container from "../../layout/Container";
-import Card_video_box from "../../designs/cards/Card_video_box";
+import VideoCard from "../../designs/cards/VideoCard";
 
 function OtherVideos({ data }) {
   return (
@@ -12,7 +12,7 @@ function OtherVideos({ data }) {
 
           <div className="flex items-center justify-start gap-4 text-left">
             {data.slice(0, 4).map((data) => (
-              <Card_video_box key={data.id} data={data} />
+              <VideoCard key={data.id} data={data} />
             ))}
           </div>
         </Container>

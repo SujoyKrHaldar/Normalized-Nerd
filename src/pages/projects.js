@@ -1,10 +1,19 @@
 import Head from "next/head";
+import { getAllProjects } from "../../api/query";
 import { sanityClient } from "../../api/sanity";
 import Layout from "../components/layout/Layout";
 import ProjectList from "../components/static-pages/project/ProjectList";
 
-function projects() {
-  let data = {};
+export const getStaticProps = async () => {
+  const projects = await sanityClient.fetch(getAllProjects);
+
+  return {
+    props: { projects },
+    revalidate: 10,
+  };
+};
+
+function projects({ projects }) {
   return (
     <>
       <Head>
@@ -14,7 +23,7 @@ function projects() {
       </Head>
 
       <Layout>
-        <ProjectList data={data} />
+        <ProjectList data={projects} />
       </Layout>
     </>
   );

@@ -1,4 +1,4 @@
-import CardblogBox from "../../designs/cards/Card_blog_Box";
+import BlogCard from "../../designs/cards/BlogCard";
 import Container from "../../layout/Container";
 
 function OtherBlogs({ data }) {
@@ -13,7 +13,7 @@ function OtherBlogs({ data }) {
 
           <div className="flex items-center justify-center gap-4 text-left">
             {data.slice(0, 4).map((data) => (
-              <CardblogBox key={data.id} data={data} />
+              <BlogCard key={data.id} data={data} />
             ))}
           </div>
         </Container>
