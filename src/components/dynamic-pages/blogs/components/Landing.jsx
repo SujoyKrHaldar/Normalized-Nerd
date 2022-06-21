@@ -8,16 +8,18 @@ function Landing({ data }) {
     <>
       <Container>
         <div className="mx-auto max-w-3xl mb-12 mt-24">
-          <p className="mb-4 text-black text-base bg-white px-4 py-1.5 border-l-2 border-black inline-block">
-            <Moment format="MMMM Do YYYY">{data.publishedAt}</Moment>
-          </p>
+          {data?.publishedAt && (
+            <p className="mb-4 text-black text-base bg-white px-4 py-1.5 border-l-2 border-black inline-block">
+              <Moment format="MMMM Do YYYY">{data?.publishedAt}</Moment>
+            </p>
+          )}
           <h1 className="font-bold mb-4">{data.title}</h1>
-          <p className="mb-4 max-w-lg">{data?.description}</p>
-          <p className="text-[#0000009c]">#COMPOSABLE ARCHITECTURE</p>
+          <p className="mb-4 ">{data?.description}</p>
+          {/* <p className="text-[#0000009c]">#COMPOSABLE ARCHITECTURE</p> */}
         </div>
 
-        <div className="bg-[#faebd7] border-[1px] border-black">
-          {data?.mainImage && (
+        {data?.mainImage && (
+          <div className="bg-[#faebd7] border-[1px] border-black">
             <Img
               src={urlFor(data?.mainImage).url()}
               alt={data.title}
@@ -27,8 +29,8 @@ function Landing({ data }) {
               objectFit="cover"
               className="w-full"
             />
-          )}
-        </div>
+          </div>
+        )}
       </Container>
     </>
   );

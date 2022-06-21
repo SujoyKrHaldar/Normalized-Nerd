@@ -28,6 +28,13 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-family: "Joan", serif;
   overflow-y: overlay;
+  font-size: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 90%;
+  }
 }
 
 ::-webkit-scrollbar {

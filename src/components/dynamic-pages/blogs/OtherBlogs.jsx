@@ -11,7 +11,7 @@ function OtherBlogs({ data }) {
             Other <span className="font-bold">Articles</span>
           </h2>
 
-          <div className="flex items-center justify-center gap-4 text-left">
+          <div className="flex items-center justify-center flex-wrap gap-x-4 gap-y-8 text-left">
             {data.slice(0, 4).map((data) => (
               <BlogCard key={data.id} data={data} />
             ))}
