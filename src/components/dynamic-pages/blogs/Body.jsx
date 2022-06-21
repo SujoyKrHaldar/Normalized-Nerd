@@ -7,7 +7,7 @@ function Body({ data, others }) {
   return (
     <>
       <div className="py-16 w-full h-auto">
-        <div className="bg-[#f2c744] w-full h-[80vh] absolute inset-0 "></div>
+        <div className="bg-[#f2c744] w-full h-[50vh] sm:h-[80vh] absolute inset-0 "></div>
         <Landing data={data} />
         <BlogTexts data={data} />
         <OtherBlogs data={others} />

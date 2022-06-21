@@ -21,7 +21,7 @@ function Blog({ data }) {
           <BlogList data={data} />
 
           <Link href="/blogs">
-            <a className="btn inline-block mt-8 bg-[#eeeeee] text-black">
+            <a className="btn inline-block mt-8 bg-[#ffffff] text-black">
               Read more
             </a>
           </Link>

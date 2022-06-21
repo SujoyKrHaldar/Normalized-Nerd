@@ -4,12 +4,14 @@ import { BsPlayFill } from "react-icons/bs";
 import { urlFor } from "../../../../api/sanity";
 import Img from "../others/Img";
 
-function VideoCard({ data }) {
+function VideoCard({ data, className = " " }) {
   return (
     <>
       <>
-        <div className="group bg-white shadow-lg hover:shadow-2xl  bg-white hover:bg-white">
-          <div className="w-full h-[180px] bg-[#c8c8c8]">
+        <div
+          className={`${className} group bg-white shadow-lg hover:shadow-2xl hover:bg-white`}
+        >
+          <div className="w-full h-[130px] md:h-[180px] bg-[#c8c8c8]">
             <Img
               src={urlFor(data.mainImage).url()}
               alt={data.title}

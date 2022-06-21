@@ -10,7 +10,7 @@ function BlogList({ data }) {
           <h2 className="mb-2">
             All <span className="font-bold">Articles</span>
           </h2>
-          <div className="mt-4 grid grid-cols-4 gap-4 ">
+          <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4  gap-x-4 gap-y-8 ">
             {data.map((d) => (
               <BlogCard key={d.id} data={d} />
             ))}

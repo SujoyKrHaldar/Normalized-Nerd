@@ -10,7 +10,7 @@ function ProjectList({ data }) {
           <h2 className="mb-2">
             All <span className="font-bold">Projects</span>.
           </h2>
-          <div className="mt-4 grid grid-cols-4 gap-4  ">
+          <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4  ">
             {data.map((d) => (
               <ProjectCard key={d.id} data={d} />
             ))}

@@ -5,7 +5,7 @@ import ShowcaseContent from "./components/ShowcaseContent";
 function YtShowcase() {
   return (
     <>
-      <div className="w-full h-[720px] py-16 overflow-x-hidden">
+      <div className="w-full h-auto md:h-[720px] py-16 md:overflow-x-hidden">
         <div className="absolute inset-0 -z-30 w-full h-auto">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
@@ -15,17 +15,19 @@ function YtShowcase() {
             ></path>
           </svg>
         </div>
-        <Container className="flex items-center">
-          <ShowcaseContent />
-
-          <div className="absolute w-full shadow-2xl max-w-[69%] h-[560px] top-0 right-0 translate-x-[30%] rotate-[356deg] ">
+        <Container className="md:flex md:items-center">
+          <div className="md:absolute w-full h-auto  mb-8 shadow-2xl md:max-w-[69%]   top-0 right-0 md:translate-x-[30%] md:rotate-[356deg] ">
             <Img
               src="/assets/images/yt.png"
               alt="youtube"
-              layout="fill"
+              layout="responsive"
+              width={900}
+              height={478}
               objectFit="cover"
+              className="w-full"
             />
           </div>
+          <ShowcaseContent />
         </Container>
       </div>
     </>

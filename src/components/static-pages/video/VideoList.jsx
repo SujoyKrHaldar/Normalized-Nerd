@@ -10,7 +10,7 @@ function VideoList({ data }) {
           <h2 className="mb-2">
             All <span className="font-bold">Videos</span>
           </h2>
-          <div className="mt-4 grid grid-cols-4 gap-4 ">
+          <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 ">
             {data.map((d) => (
               <VideoCard key={d.id} data={d} />
             ))}

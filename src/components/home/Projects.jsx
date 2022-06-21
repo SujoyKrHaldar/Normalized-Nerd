@@ -23,7 +23,7 @@ function Projects({ data }) {
           <h2 className="mb-2">
             Featured <span className="font-bold">Projects</span>.
           </h2>
-          <p>
+          <p className="mb-8">
             I love to create projects on machine learning related topics. Check
             it
           </p>
@@ -31,7 +31,7 @@ function Projects({ data }) {
           <ProjectList data={data} />
 
           <Link href="/projects">
-            <a className="btn inline-block mt-8 bg-[#eeeeee] text-black">
+            <a className="btn inline-block mt-8 bg-[#1b1b1b] text-white">
               View all
             </a>
           </Link>
