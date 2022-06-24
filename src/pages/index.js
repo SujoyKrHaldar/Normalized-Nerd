@@ -8,6 +8,7 @@ import Layout from "../components/layout/Layout";
 
 import { sanityClient } from "../../api/sanity";
 import { getAllVideos, getAllBlogs, getAllProjects } from "../../api/query";
+import Contact from "../components/home/Contact";
 
 export const getStaticProps = async () => {
   const videos = await sanityClient.fetch(getAllVideos);
@@ -35,6 +36,7 @@ export default function Home({ videos, blogs, projects }) {
         <Videos data={videos} />
         <Blog data={blogs} />
         <Projects data={projects} />
+        <Contact />
       </Layout>
     </>
   );
