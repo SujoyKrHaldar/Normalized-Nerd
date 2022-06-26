@@ -2,6 +2,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
+import {
+  AiFillFacebook,
+  AiFillInstagram,
+  AiFillTwitterSquare,
+} from "react-icons/ai";
 import Navbar_Desktop from "./components/navbar/Navbar_Desktop";
 import Navbar_Mobile from "./components/navbar/Navbar_Mobile";
 
@@ -41,7 +46,7 @@ function Navbar() {
   };
   return (
     <>
-      <div className="absolute  w-full top-0 z-[10]">
+      <div className="absolute bg-white w-full top-0 z-[10]">
         <div className="container flex items-center justify-between gap-4 ">
           <Link href="/" passHref>
             <div className="w-20 h-full py-6 px-3 bg-white cursor-pointer ">
@@ -59,7 +64,21 @@ function Navbar() {
           </Link>
           <Navbar_Desktop navLinks={navLinks} />
           <div className="flex items-center justify-between gap-8">
-            <div onClick={openModel} className=" flex text-3xl cursor-pointer">
+            <div className="flex items-center justify-center gap-2">
+              <div className="text-3xl">
+                <AiFillFacebook />
+              </div>
+              <div className="text-3xl">
+                <AiFillInstagram />
+              </div>
+              <div className="text-3xl">
+                <AiFillTwitterSquare />
+              </div>
+            </div>
+            <div
+              onClick={openModel}
+              className="md:hidden flex text-3xl cursor-pointer"
+            >
               <FiMenu />
             </div>
           </div>

@@ -8,15 +8,16 @@ function LandingContent() {
       <div className="max-w-xl py-4">
         <p>Hello, People from the future</p>
         <h1>
-          I am <span className="font-bold">Sujan Dutta</span>{" "}
-          <span className="block">
-            aka the <span className="font-bold">Normalized Nerd</span>.
-          </span>
+          I am <span className="font-bold">Sujan Dutta</span>
         </h1>
-        <p className="mt-2 max-w-[360px]">
+
+        <h2>
+          aka the <span className="font-bold">Normalized Nerd</span>.
+        </h2>
+        {/* <p className="mt-2 max-w-[360px]">
           I love to create educational videos on Machine Learning and Creative
           Coding. Start learning with me.
-        </p>
+        </p> */}
 
         {/* <div className="flex items-center justify-start gap-4 mt-4">
           <a

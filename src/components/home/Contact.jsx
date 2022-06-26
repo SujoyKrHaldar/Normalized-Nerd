@@ -8,15 +8,22 @@ import {
 function Contact() {
   return (
     <>
-      <div className="w-full h-[450px] bg-[#f2c744] py-16">
+      <div className="w-full h-[450px] py-16">
         <Container className="flex items-center text-center">
-          <div className="max-w-lg mx-auto ">
-            <h1>
+          <div className="max-w-xl mx-auto ">
+            <h2>Thats all about me,</h2>
+
+            <h1 className="font-bold"> Feel free to say hi!</h1>
+            <p>
               Lets discuss <span className="font-bold">Something cool</span>{" "}
               together.
-            </h1>
-            <a href="/" className="btn hover:underline">
-              <p className="font-bold text-3xl">sujoy98@gmail.com</p>
+            </p>
+
+            <a
+              href="mailto:sujan99dutta@gmail.com"
+              className="btn inline-block bg-[#f2c744] text-black mt-4 border-2 border-transparent hover:border-black mb-8"
+            >
+              <p className="font-bold"> sujan99dutta@gmail.com</p>
             </a>
 
             <p>Connnect with socials</p>
