@@ -32,6 +32,10 @@ export const getAllFaqs = `*[_type == "faq"]|order(_createdAt desc){
                                 "answer":body,
                             }`;
 
+export const getAllPapers = `*[_type == "papers"]|order(_createdAt desc){
+                                "id":_id,
+                                title, link, publishedAt
+                            }`;
 //For indivudial blog
 
 export const getAllBlogSlugs = `*[_type == "blog" && defined(slug.current)][].slug.current`;

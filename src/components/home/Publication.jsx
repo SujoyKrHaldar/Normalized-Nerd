@@ -3,7 +3,7 @@ import Link from "next/link";
 import Container from "../layout/Container";
 import PublicationList from "./components/PublicationList";
 
-function Publication() {
+function Publication({ data }) {
   return (
     <>
       <div className="w-full h-full py-16">
@@ -15,7 +15,7 @@ function Publication() {
             Whats <span className="font-bold">New.</span>
           </h2>
 
-          <PublicationList />
+          <PublicationList data={data} />
 
           <Link href="/blogs">
             <a className="btn inline-block mt-8 bg-[#000000] text-white">

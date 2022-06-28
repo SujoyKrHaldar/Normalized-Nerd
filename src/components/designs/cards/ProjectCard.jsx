@@ -14,7 +14,7 @@ function ProjectCard({ data }) {
         <div className="">
           <p className="font-bold mb-4">{data.name}</p>
 
-          <div className="flex items-center justify-start gap-4">
+          {/* <div className="flex items-center justify-start gap-4">
             {data.links.map((url, id) => (
               <a
                 className="text-sm font-bold"
@@ -25,7 +25,7 @@ function ProjectCard({ data }) {
                 {url.UrlProvider}
               </a>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </>

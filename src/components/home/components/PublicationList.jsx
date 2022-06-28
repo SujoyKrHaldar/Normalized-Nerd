@@ -1,12 +1,12 @@
 import PublicationCard from "../../designs/cards/PublicationCard";
 
-function PublicationList() {
+function PublicationList({ data }) {
   return (
     <>
       <div className="">
-        <PublicationCard />
-        <PublicationCard />
-        <PublicationCard />
+        {data.map((d) => (
+          <PublicationCard key={d.id} data={d} />
+        ))}
       </div>
     </>
   );

@@ -7,7 +7,12 @@ import YtShowcase from "../components/home/YtShowcase";
 import Layout from "../components/layout/Layout";
 
 import { sanityClient } from "../../api/sanity";
-import { getAllVideos, getAllBlogs, getAllProjects } from "../../api/query";
+import {
+  getAllVideos,
+  getAllBlogs,
+  getAllProjects,
+  getAllPapers,
+} from "../../api/query";
 import Contact from "../components/home/Contact";
 import Publication from "../components/home/Publication";
 
@@ -15,14 +20,15 @@ export const getStaticProps = async () => {
   const videos = await sanityClient.fetch(getAllVideos);
   const blogs = await sanityClient.fetch(getAllBlogs);
   const projects = await sanityClient.fetch(getAllProjects);
+  const papers = await sanityClient.fetch(getAllPapers);
 
   return {
-    props: { videos, blogs, projects },
+    props: { videos, blogs, projects, papers },
     revalidate: 10,
   };
 };
 
-export default function Home({ videos, blogs, projects }) {
+export default function Home({ videos, blogs, projects, papers }) {
   return (
     <>
       <Head>
@@ -37,7 +43,7 @@ export default function Home({ videos, blogs, projects }) {
         <Videos data={videos} />
         <Blog data={blogs} />
         <Projects data={projects} />
-        <Publication />
+        <Publication data={papers} />
         <Contact />
       </Layout>
     </>
