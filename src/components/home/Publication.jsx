@@ -8,7 +8,7 @@ function Publication({ data }) {
     <>
       <div className="w-full h-full py-16">
         <Container>
-          <p className="flex items-center text-black mb-2 text-[2rem]">
+          <p className="flex items-center text-[#818181] mb-2 text-[2rem]">
             <FaRegNewspaper />
           </p>
           <h2 className="mb-8">
