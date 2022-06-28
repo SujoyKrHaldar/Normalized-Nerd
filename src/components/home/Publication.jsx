@@ -17,7 +17,7 @@ function Publication({ data }) {
 
           <PublicationList data={data} />
 
-          <Link href="/blogs">
+          <Link href="/papers">
             <a className="btn inline-block mt-8 bg-[#000000] text-white">
               Read more
             </a>
