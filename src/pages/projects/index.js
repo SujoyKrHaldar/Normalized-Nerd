@@ -1,8 +1,8 @@
 import Head from "next/head";
-import { getAllProjects } from "../../api/query";
-import { sanityClient } from "../../api/sanity";
-import Layout from "../components/layout/Layout";
-import ProjectList from "../components/static-pages/project/ProjectList";
+import { getAllProjects } from "../../../api/query";
+import { sanityClient } from "../../../api/sanity";
+import Layout from "../../components/layout/Layout";
+import ProjectList from "../../components/static-pages/project/ProjectList";
 
 export const getStaticProps = async () => {
   const projects = await sanityClient.fetch(getAllProjects);

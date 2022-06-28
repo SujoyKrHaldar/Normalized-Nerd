@@ -18,11 +18,15 @@ export const getAllBlogs = `*[_type == "blog"]|order(_createdAt desc){
                                 mainImage,
                             }`;
 
-export const getAllProjects = `*[_type == "project"]|order(_createdAt desc){
+export const getAllProjects = `*[_type == "project"]|order(_createdAt desc) {
                                 "id":_id,
+                                "link":github,
+                                "slug":slug.current,
                                 name,
-                                body,
-                                links
+                                mainImage,
+                                description,
+                                publishedAt,
+                                body
                             }`;
 
 export const getAllFaqs = `*[_type == "faq"]|order(_createdAt desc){
